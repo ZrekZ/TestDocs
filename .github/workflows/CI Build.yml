@@ -41,7 +41,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: dotnet-results-${{ matrix.dotnet-version }}
-        path: coverage/ #TestResults-${{ matrix.dotnet-version }}
+        path: coverage/coverage.cobertura.xml #TestResults-${{ matrix.dotnet-version }}
       if: ${{ always() }}
       
     - name: List files in coverage directory
