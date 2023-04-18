@@ -1,1 +1,0 @@
-{"message":"Invalid cref value \"!:Int32.MaxValue\" found in triple-slash-comments for Add defined in Class1.cs Line 137, ignored.","source":"MetadataCommand.ExtractMetadata","date_time":"2023-04-18T07:29:07.8363428Z","message_severity":"warning","correlation_id":"F25EBD5D-3311-4F80-B3EC-E87CCDBACC33.1.1.8"}
