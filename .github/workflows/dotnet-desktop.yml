@@ -36,16 +36,19 @@ jobs:
         with:
           args: ./docfx.json
 
-      # Publish generated site using GitHub Pages
+      #Publish generated site using GitHub Pages
       #git remote add origin https://{username}:{password}@github.com/{username}/project.git
-      #- uses: maxheld83/ghpages@master
-      #  name: Publish Documentation on GitHub Pages
-      #  env:
-      #    BUILD_DIR: _site # docfx's default output directory is _site
-      #    GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
+      - uses: maxheld83/ghpages@master
+        name: Publish Documentation on GitHub Pages
+        env:
+          BUILD_DIR: _site # docfx's default output directory is _site
+          GH_PAT: git remote set-url origin https://{username}:{password}@github.com/{username}/project.git
+          #GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
+        
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
   

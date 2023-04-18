@@ -41,14 +41,15 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: dotnet-results-${{ matrix.dotnet-version }}
-        path: TestResults-${{ matrix.dotnet-version }}
+        path: ./coverage/
+      #TestResults-${{ matrix.dotnet-version }}
       #if: ${{ always() }}
       
-    - name: Test Reporter
-      uses: dorny/test-reporter@v1.6.0
+    #- name: Test Reporter
+    #  uses: dorny/test-reporter@v1.6.0
       
     - name: List files in coverage directory
-      run: ls coverage/
+      run: ls #
       
     - name: Copy Coverage To Predictable Location
       run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml
