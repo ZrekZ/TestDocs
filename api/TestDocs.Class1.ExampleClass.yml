@@ -16,22 +16,21 @@ items:
   type: Class
   source:
     remote:
-      path: C:/Users/Admin/source/repos/TestDocs/Class1.cs
+      path: Class1.cs
+      branch: master
+      repo: https://github.com/ZrekZ/TestDocs.git
     id: ExampleClass
     path: Class1.cs
     startLine: 85
   assemblies:
   - TestDocs
   namespace: TestDocs
-  summary: >-
-    Every class and member should have a one sentence
-
-    summary describing its purpose.
-  remarks: " You can expand on that one sentence summary to\r\n provide more information for readers. In this case,\r\n the <code>ExampleClass</code> provides different C#\r\n elements to show how you would add documentation\r\ncomments for most elements in a typical class.\r\n <p>\r\n The remarks can add multiple paragraphs, so you can\r\n write detailed information for developers that use\r\n your work. You should add everything needed for\r\n readers to be successful. This class contains\r\n examples for the following:\r\n </p>\r\n <table><tbody><tr><td class=\"term\">Summary</td><td class=\"description\">\r\n This should provide a one sentence summary of the class or member.\r\n </td></tr><tr><td class=\"term\">Remarks</td><td class=\"description\">\r\n This is typically a more detailed description of the class or member\r\n </td></tr><tr><td class=\"term\">para</td><td class=\"description\">\r\n The para tag separates a section into multiple paragraphs\r\n </td></tr><tr><td class=\"term\">list</td><td class=\"description\">\r\n Provides a list of terms or elements\r\n </td></tr><tr><td class=\"term\">returns, param</td><td class=\"description\">\r\n Used to describe parameters and return values\r\n </td></tr><tr><td class=\"term\">value</td><td class=\"description\">Used to describe properties</td></tr><tr><td class=\"term\">exception</td><td class=\"description\">\r\n Used to describe exceptions that may be thrown\r\n </td></tr><tr><td class=\"term\">c, cref, see, seealso</td><td class=\"description\">\r\n These provide code style and links to other\r\n documentation elements\r\n </td></tr><tr><td class=\"term\">example, code</td><td class=\"description\">\r\n These are used for code examples\r\n </td></tr></tbody></table>\r\n <p>\r\n The list above uses the \"table\" style. You could\r\n also use the \"bullet\" or \"number\" style. Neither\r\n would typically use the \"term\" element.\r\n <br />\r\n Note: paragraphs are double spaced. Use the *br*\r\n tag for single spaced lines.\r\n </p>"
+  summary: "\nEvery class and member should have a one sentence\nsummary describing its purpose.\n"
+  remarks: "\nYou can expand on that one sentence summary to\nprovide more information for readers. In this case,\nthe <code>ExampleClass</code> provides different C#\nelements to show how you would add documentation\ncomments for most elements in a typical class.\n<p>\nThe remarks can add multiple paragraphs, so you can\nwrite detailed information for developers that use\nyour work. You should add everything needed for\nreaders to be successful. This class contains\nexamples for the following:\n</p>\n<table><tbody><tr><td>Summary</td><td>\nThis should provide a one sentence summary of the class or member.\n</td></tr><tr><td>Remarks</td><td>\nThis is typically a more detailed description of the class or member\n</td></tr><tr><td>para</td><td>\nThe para tag separates a section into multiple paragraphs\n</td></tr><tr><td>list</td><td>\nProvides a list of terms or elements\n</td></tr><tr><td>returns, param</td><td>\nUsed to describe parameters and return values\n</td></tr><tr><td>value</td><td>Used to describe properties</td></tr><tr><td>exception</td><td>\nUsed to describe exceptions that may be thrown\n</td></tr><tr><td>c, cref, see, seealso</td><td>\nThese provide code style and links to other\ndocumentation elements\n</td></tr><tr><td>example, code</td><td>\nThese are used for code examples\n</td></tr></tbody></table>\n<p>\nThe list above uses the &quot;table&quot; style. You could\nalso use the &quot;bullet&quot; or &quot;number&quot; style. Neither\nwould typically use the &quot;term&quot; element.\n<br />\nNote: paragraphs are double spaced. Use the *br*\ntag for single spaced lines.\n</p>\n"
   example: []
   syntax:
-    content: public class Class1.ExampleClass
-    content.vb: Public Class Class1.ExampleClass
+    content: public class ExampleClass
+    content.vb: Public Class ExampleClass
   inheritance:
   - System.Object
   inheritedMembers:
@@ -42,6 +41,12 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+  modifiers.csharp:
+  - public
+  - class
+  modifiers.vb:
+  - Public
+  - Class
 - uid: TestDocs.Class1.ExampleClass.Label
   commentId: P:TestDocs.Class1.ExampleClass.Label
   id: Label
@@ -55,37 +60,31 @@ items:
   type: Property
   source:
     remote:
-      path: C:/Users/Admin/source/repos/TestDocs/Class1.cs
+      path: Class1.cs
+      branch: master
+      repo: https://github.com/ZrekZ/TestDocs.git
     id: Label
     path: Class1.cs
     startLine: 99
   assemblies:
   - TestDocs
   namespace: TestDocs
-  remarks: >-
-    The <xref href="TestDocs.Class1.ExampleClass.Label" data-throw-if-not-resolved="false"></xref> is a <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/reference-types">string</a>
-
-    that you use for a label.
-
-    <p>
-
-    Note that there isn't a way to provide a "cref" to
-
-    each accessor, only to the property itself.
-
-    </p>
+  remarks: "\nThe <xref href=\"TestDocs.Class1.ExampleClass.Label\" data-throw-if-not-resolved=\"false\"></xref> is a <xref uid=\"langword_csharp_string\" name=\"string\" href=\"\"></xref>\nthat you use for a label.\n<p>\nNote that there isn&apos;t a way to provide a &quot;cref&quot; to\neach accessor, only to the property itself.\n</p>\n"
   example: []
   syntax:
-    content: public string? Label { get; set; }
+    content: public string Label { get; set; }
     parameters: []
     return:
       type: System.String
-      description: >-
-        The <code>Label</code> property represents a label
-
-        for this instance.
+      description: "\nThe <code>Label</code> property represents a label\nfor this instance.\n"
     content.vb: Public Property Label As String
   overload: TestDocs.Class1.ExampleClass.Label*
+  modifiers.csharp:
+  - public
+  - get
+  - set
+  modifiers.vb:
+  - Public
 - uid: TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
   commentId: M:TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
   id: Add(System.Int32,System.Int32)
@@ -93,67 +92,57 @@ items:
   langs:
   - csharp
   - vb
-  name: Add(int, int)
-  nameWithType: Class1.ExampleClass.Add(int, int)
-  fullName: TestDocs.Class1.ExampleClass.Add(int, int)
+  name: Add(Int32, Int32)
+  nameWithType: Class1.ExampleClass.Add(Int32, Int32)
+  fullName: TestDocs.Class1.ExampleClass.Add(System.Int32, System.Int32)
   type: Method
   source:
     remote:
-      path: C:/Users/Admin/source/repos/TestDocs/Class1.cs
+      path: Class1.cs
+      branch: master
+      repo: https://github.com/ZrekZ/TestDocs.git
     id: Add
     path: Class1.cs
     startLine: 137
   assemblies:
   - TestDocs
   namespace: TestDocs
-  summary: Adds two integers and returns the result.
+  summary: "\nAdds two integers and returns the result.\n"
   example:
-  - >-
-    <pre><code class="lang-csharp">int c = Math.Add(4, 5);
-
-    if (c &gt; 10)
-
-    {
-        Console.WriteLine(c);
-    }</code></pre>
+  - "\n<pre><code>int c = Math.Add(4, 5);\nif (c > 10)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
   syntax:
     content: public static int Add(int left, int right)
     parameters:
     - id: left
       type: System.Int32
-      description: The left operand of the addition.
+      description: "\nThe left operand of the addition.\n"
     - id: right
       type: System.Int32
-      description: The right operand of the addition.
+      description: "\nThe right operand of the addition.\n"
     return:
       type: System.Int32
-      description: The sum of two integers.
+      description: "\nThe sum of two integers.\n"
     content.vb: Public Shared Function Add(left As Integer, right As Integer) As Integer
   overload: TestDocs.Class1.ExampleClass.Add*
   exceptions:
   - type: System.OverflowException
     commentId: T:System.OverflowException
-    description: >-
-      Thrown when one parameter is
-
-      <xref href="System.Int32.MaxValue?text=MaxValue" data-throw-if-not-resolved="false"></xref> and the other is
-
-      greater than 0.
-
-      Note that here you can also use
-
-      <a href="https://learn.microsoft.com/dotnet/api/system.int32.maxvalue">https://learn.microsoft.com/dotnet/api/system.int32.maxvalue</a>
-       to point a web page instead.
+    description: "\nThrown when one parameter is\n<see cref=\"!:Int32.MaxValue\">MaxValue</see> and the other is\ngreater than 0.\nNote that here you can also use\n<a href=\"https://learn.microsoft.com/dotnet/api/system.int32.maxvalue\">https://learn.microsoft.com/dotnet/api/system.int32.maxvalue</a>\n to point a web page instead.\n"
   seealso:
   - linkId: TestDocs.Class1.ExampleClass.Label
     commentId: P:TestDocs.Class1.ExampleClass.Label
-  nameWithType.vb: Class1.ExampleClass.Add(Integer, Integer)
-  fullName.vb: TestDocs.Class1.ExampleClass.Add(Integer, Integer)
-  name.vb: Add(Integer, Integer)
+  see:
+  - linkId: TestDocs.Class1.ExampleClass
+    commentId: T:TestDocs.Class1.ExampleClass
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
 references:
 - uid: TestDocs
   commentId: N:TestDocs
-  href: TestDocs.html
   name: TestDocs
   nameWithType: TestDocs
   fullName: TestDocs
@@ -161,248 +150,299 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object
-  name: object
-  nameWithType: object
-  fullName: object
-  nameWithType.vb: Object
-  fullName.vb: Object
-  name.vb: Object
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
-  name: Equals(object)
-  nameWithType: object.Equals(object)
-  fullName: object.Equals(object)
-  nameWithType.vb: Object.Equals(Object)
-  fullName.vb: Object.Equals(Object)
-  name.vb: Equals(Object)
+  name: Equals(Object)
+  nameWithType: Object.Equals(Object)
+  fullName: System.Object.Equals(System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Object
-    name: object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Object
     name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
-  name: Equals(object, object)
-  nameWithType: object.Equals(object, object)
-  fullName: object.Equals(object, object)
-  nameWithType.vb: Object.Equals(Object, Object)
-  fullName.vb: Object.Equals(Object, Object)
-  name.vb: Equals(Object, Object)
+  name: Equals(Object, Object)
+  nameWithType: Object.Equals(Object, Object)
+  fullName: System.Object.Equals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Object
-    name: object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Object
-    name: object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
+    nameWithType: Object.Equals
+    fullName: System.Object.Equals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Object
     name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Object
     name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   name: GetHashCode()
-  nameWithType: object.GetHashCode()
-  fullName: object.GetHashCode()
-  nameWithType.vb: Object.GetHashCode()
-  fullName.vb: Object.GetHashCode()
+  nameWithType: Object.GetHashCode()
+  fullName: System.Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.GetHashCode
     name: GetHashCode
+    nameWithType: Object.GetHashCode
+    fullName: System.Object.GetHashCode
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   name: GetType()
-  nameWithType: object.GetType()
-  fullName: object.GetType()
-  nameWithType.vb: Object.GetType()
-  fullName.vb: Object.GetType()
+  nameWithType: Object.GetType()
+  fullName: System.Object.GetType()
   spec.csharp:
   - uid: System.Object.GetType
     name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.GetType
     name: GetType
+    nameWithType: Object.GetType
+    fullName: System.Object.GetType
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.MemberwiseClone
   commentId: M:System.Object.MemberwiseClone
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   name: MemberwiseClone()
-  nameWithType: object.MemberwiseClone()
-  fullName: object.MemberwiseClone()
-  nameWithType.vb: Object.MemberwiseClone()
-  fullName.vb: Object.MemberwiseClone()
+  nameWithType: Object.MemberwiseClone()
+  fullName: System.Object.MemberwiseClone()
   spec.csharp:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
+    nameWithType: Object.MemberwiseClone
+    fullName: System.Object.MemberwiseClone
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
-  name: ReferenceEquals(object, object)
-  nameWithType: object.ReferenceEquals(object, object)
-  fullName: object.ReferenceEquals(object, object)
-  nameWithType.vb: Object.ReferenceEquals(Object, Object)
-  fullName.vb: Object.ReferenceEquals(Object, Object)
-  name.vb: ReferenceEquals(Object, Object)
+  name: ReferenceEquals(Object, Object)
+  nameWithType: Object.ReferenceEquals(Object, Object)
+  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Object
-    name: object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Object
-    name: object
+    name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
+    nameWithType: Object.ReferenceEquals
+    fullName: System.Object.ReferenceEquals
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
+    nameWithType: (
+    fullName: (
   - uid: System.Object
     name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: ','
-  - name: " "
+  - name: ', '
+    nameWithType: ', '
+    fullName: ', '
   - uid: System.Object
     name: Object
+    nameWithType: Object
+    fullName: System.Object
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   name: ToString()
-  nameWithType: object.ToString()
-  fullName: object.ToString()
-  nameWithType.vb: Object.ToString()
-  fullName.vb: Object.ToString()
+  nameWithType: Object.ToString()
+  fullName: System.Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
   spec.vb:
   - uid: System.Object.ToString
     name: ToString
+    nameWithType: Object.ToString
+    fullName: System.Object.ToString
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
+    nameWithType: (
+    fullName: (
   - name: )
+    nameWithType: )
+    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: TestDocs.Class1.ExampleClass.Label
   commentId: P:TestDocs.Class1.ExampleClass.Label
-  href: TestDocs.Class1.ExampleClass.html#TestDocs.Class1.ExampleClass.Label
-  name: Label
-  nameWithType: Class1.ExampleClass.Label
-  fullName: TestDocs.Class1.ExampleClass.Label
+  isExternal: true
 - uid: TestDocs.Class1.ExampleClass.Label*
   commentId: Overload:TestDocs.Class1.ExampleClass.Label
-  href: TestDocs.Class1.ExampleClass.html#TestDocs.Class1.ExampleClass.Label
   name: Label
   nameWithType: Class1.ExampleClass.Label
   fullName: TestDocs.Class1.ExampleClass.Label
@@ -410,54 +450,19 @@ references:
   commentId: T:System.String
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: System.Int32.MaxValue
-  commentId: F:System.Int32.MaxValue
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32.maxvalue
-  name: MaxValue
-  nameWithType: int.MaxValue
-  fullName: int.MaxValue
-  nameWithType.vb: Integer.MaxValue
-  fullName.vb: Integer.MaxValue
+  name: String
+  nameWithType: String
+  fullName: System.String
 - uid: TestDocs.Class1.ExampleClass
   commentId: T:TestDocs.Class1.ExampleClass
-  href: TestDocs.Class1.html
   name: Class1.ExampleClass
   nameWithType: Class1.ExampleClass
   fullName: TestDocs.Class1.ExampleClass
-  spec.csharp:
-  - uid: TestDocs.Class1
-    name: Class1
-    href: TestDocs.Class1.html
-  - name: .
-  - uid: TestDocs.Class1.ExampleClass
-    name: ExampleClass
-    href: TestDocs.Class1.ExampleClass.html
-  spec.vb:
-  - uid: TestDocs.Class1
-    name: Class1
-    href: TestDocs.Class1.html
-  - name: .
-  - uid: TestDocs.Class1.ExampleClass
-    name: ExampleClass
-    href: TestDocs.Class1.ExampleClass.html
 - uid: System.OverflowException
   commentId: T:System.OverflowException
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.overflowexception
-  name: OverflowException
-  nameWithType: OverflowException
-  fullName: System.OverflowException
 - uid: TestDocs.Class1.ExampleClass.Add*
   commentId: Overload:TestDocs.Class1.ExampleClass.Add
-  href: TestDocs.Class1.ExampleClass.html#TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
   name: Add
   nameWithType: Class1.ExampleClass.Add
   fullName: TestDocs.Class1.ExampleClass.Add
@@ -465,10 +470,6 @@ references:
   commentId: T:System.Int32
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  name: Int32
+  nameWithType: Int32
+  fullName: System.Int32

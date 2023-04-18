@@ -20,14 +20,11 @@ references:
   fullName: TestDocs.Class1.ExampleClass
   nameWithType: Class1.ExampleClass
 - uid: TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
-  name: Add(int, int)
+  name: Add(Int32, Int32)
   href: api/TestDocs.Class1.ExampleClass.html#TestDocs_Class1_ExampleClass_Add_System_Int32_System_Int32_
   commentId: M:TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
-  name.vb: Add(Integer, Integer)
-  fullName: TestDocs.Class1.ExampleClass.Add(int, int)
-  fullName.vb: TestDocs.Class1.ExampleClass.Add(Integer, Integer)
-  nameWithType: Class1.ExampleClass.Add(int, int)
-  nameWithType.vb: Class1.ExampleClass.Add(Integer, Integer)
+  fullName: TestDocs.Class1.ExampleClass.Add(System.Int32, System.Int32)
+  nameWithType: Class1.ExampleClass.Add(Int32, Int32)
 - uid: TestDocs.Class1.ExampleClass.Add*
   name: Add
   href: api/TestDocs.Class1.ExampleClass.html#TestDocs_Class1_ExampleClass_Add_
@@ -55,24 +52,18 @@ references:
   fullName: TestDocs.Class1.Person
   nameWithType: Class1.Person
 - uid: TestDocs.Class1.Person.#ctor(System.String,System.String)
-  name: Person(string, string)
+  name: Person(String, String)
   href: api/TestDocs.Class1.Person.html#TestDocs_Class1_Person__ctor_System_String_System_String_
   commentId: M:TestDocs.Class1.Person.#ctor(System.String,System.String)
-  name.vb: New(String, String)
-  fullName: TestDocs.Class1.Person.Person(string, string)
-  fullName.vb: TestDocs.Class1.Person.New(String, String)
-  nameWithType: Class1.Person.Person(string, string)
-  nameWithType.vb: Class1.Person.New(String, String)
+  fullName: TestDocs.Class1.Person.Person(System.String, System.String)
+  nameWithType: Class1.Person.Person(String, String)
 - uid: TestDocs.Class1.Person.#ctor*
   name: Person
   href: api/TestDocs.Class1.Person.html#TestDocs_Class1_Person__ctor_
   commentId: Overload:TestDocs.Class1.Person.#ctor
   isSpec: "True"
-  name.vb: New
   fullName: TestDocs.Class1.Person.Person
-  fullName.vb: TestDocs.Class1.Person.New
   nameWithType: Class1.Person.Person
-  nameWithType.vb: Class1.Person.New
 - uid: TestDocs.Class1.Person.FirstName
   name: FirstName
   href: api/TestDocs.Class1.Person.html#TestDocs_Class1_Person_FirstName
