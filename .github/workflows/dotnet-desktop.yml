@@ -19,13 +19,13 @@ jobs:
         uses: subosito/flutter-action@v2
 
       - name: Build
-        run: dotnet build -o .\outputs\test1.zip
+        run: dotnet build -o ./outputs/test1.zip
 
       - name: Upload build
         uses: actions/upload-artifact@v3
         with:
           name: Build ${{ github.run_number }}
-          path: .\outputs\test1.zip 
+          path: ./outputs/test1.zip 
       - uses: actions/checkout@v1
       # ...
       - name: docfx-action
@@ -38,9 +38,14 @@ jobs:
 
       # Publish generated site using GitHub Pages
       #git remote add origin https://{username}:{password}@github.com/{username}/project.git
-      - uses: maxheld83/ghpages@master
-        name: Publish Documentation on GitHub Pages
-        env:
-          BUILD_DIR: _site # docfx's default output directory is _site
-          GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
+      #- uses: maxheld83/ghpages@master
+      #  name: Publish Documentation on GitHub Pages
+      #  env:
+      #    BUILD_DIR: _site # docfx's default output directory is _site
+      #    GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
   
