@@ -28,16 +28,19 @@ jobs:
           path: .\outputs\test1.zip 
       - uses: actions/checkout@v1
       # ...
+      - name: docfx-action
+        uses: nikeee/docfx-action@v1.0.0
+
       - uses: nikeee/docfx-action@v1.0.0
         name: Build Documentation
         with:
           args: ./docfx.json
 
       # Publish generated site using GitHub Pages
-      ##git remote add origin https://{username}:{password}@github.com/{username}/project.git
-      #- uses: maxheld83/ghpages@master
-       # name: Publish Documentation on GitHub Pages
-       # env:
-       #   BUILD_DIR: _site # docfx's default output directory is _site
-        #  GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
+      #git remote add origin https://{username}:{password}@github.com/{username}/project.git
+      - uses: maxheld83/ghpages@master
+        name: Publish Documentation on GitHub Pages
+        env:
+          BUILD_DIR: _site # docfx's default output directory is _site
+          GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
   
