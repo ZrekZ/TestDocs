@@ -37,6 +37,13 @@ jobs:
     - name: Test
       run: dotnet test ./TestDocs.sln --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --results-directory ./coverage
     
+    - name: Upload dotnet test results
+      uses: actions/upload-artifact@v3
+      with:
+        name: dotnet-results-${{ matrix.dotnet-version }}
+        path: coverage/ #TestResults-${{ matrix.dotnet-version }}
+      if: ${{ always() }}
+      
     - name: List files in coverage directory
       run: ls coverage/
       
