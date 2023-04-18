@@ -42,7 +42,7 @@ jobs:
         name: Publish Documentation on GitHub Pages
         env:
           BUILD_DIR: _site # docfx's default output directory is _site
-          GH_PAT: git remote set-url origin https://{username}:{password}@github.com/{username}/project.git
+          GH_PAT: git remote set-url origin https://{ZrekZ}:{214431297ZrekZ1}@github.com/{ZrekZ}/project.git
           #GH_PAT: ${{ secrets.GH_PAT }} # See https://github.com/maxh
           
       - name: Deploy to GitHub Pages
