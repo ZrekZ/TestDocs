@@ -36,7 +36,10 @@ jobs:
 
     - name: Test
       run: dotnet test ./TestDocs.sln --configuration Release --no-build --verbosity normal --collect:"XPlat Code Coverage" --logger trx --results-directory ./coverage
-        
+    
+    - name: List files in coverage directory
+      run: ls coverage/
+      
     - name: Copy Coverage To Predictable Location
       run: cp coverage/**/coverage.cobertura.xml coverage.cobertura.xml
 
