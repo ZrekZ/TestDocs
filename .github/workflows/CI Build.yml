@@ -67,4 +67,4 @@ jobs:
       uses: actions/upload-artifact@v2.3.0
       with:
         name: ci-nugets
-        path: src/DocFXExample/bin/Release/Taranis.DocFXExample*.nupkg
+        path: src/TestDocs/bin/Release/Taranis.TestDocs*.nupkg
