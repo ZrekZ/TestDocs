@@ -44,6 +44,9 @@ jobs:
         path: TestResults-${{ matrix.dotnet-version }}
       #if: ${{ always() }}
       
+    - name: Test Reporter
+      uses: dorny/test-reporter@v1.6.0
+      
     - name: List files in coverage directory
       run: ls coverage/
       
