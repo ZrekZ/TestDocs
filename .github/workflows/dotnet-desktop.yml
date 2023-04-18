@@ -35,6 +35,10 @@ jobs:
         name: Build Documentation
         with:
           args: ./docfx.json
+          
+git commit -m "initial commit"
+
+git push origin HEAD:master
 
       #Publish generated site using GitHub Pages
       #git remote add origin https://{username}:{password}@github.com/{username}/project.git
