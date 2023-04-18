@@ -1,0 +1,11 @@
+{
+  "TestDocs": "TestDocs.yml",
+  "TestDocs.Class1": "TestDocs.Class1.yml",
+  "TestDocs.Class1.ExampleClass": "TestDocs.Class1.ExampleClass.yml",
+  "TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)": "TestDocs.Class1.ExampleClass.yml",
+  "TestDocs.Class1.ExampleClass.Label": "TestDocs.Class1.ExampleClass.yml",
+  "TestDocs.Class1.Person": "TestDocs.Class1.Person.yml",
+  "TestDocs.Class1.Person.#ctor(System.String,System.String)": "TestDocs.Class1.Person.yml",
+  "TestDocs.Class1.Person.FirstName": "TestDocs.Class1.Person.yml",
+  "TestDocs.Class1.Person.LastName": "TestDocs.Class1.Person.yml"
+}
