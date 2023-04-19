@@ -123,7 +123,7 @@
             /// </param>
             /// <example>
             /// <code>
-            /// int c = Math.Add(4, 5);
+            /// int c = Math.Add(4, 10);
             /// if (c > 10)
             /// {
             ///     Console.WriteLine(c);
