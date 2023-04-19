@@ -141,13 +141,13 @@
             /// <see cref="ExampleClass"/> for a list of all
             /// the tags in these examples.
             /// <seealso cref="ExampleClass.Label"/>
-            public static int Add(int left, int right)
-            {
-                if ((left == int.MaxValue && right > 0) || (right == int.MaxValue && left > 0))
-                    throw new System.OverflowException();
+            //public static int Add(int left, int right)
+            //{
+            //    if ((left == int.MaxValue && right > 0) || (right == int.MaxValue && left > 0))
+            //        throw new System.OverflowException();
 
-                return left + right;
-            }
+            //    return left + right;
+            //}
         }
 
         /// <summary>
