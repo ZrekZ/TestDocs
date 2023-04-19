@@ -5,7 +5,6 @@ items:
   id: Class1.ExampleClass
   parent: TestDocs
   children:
-  - TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
   - TestDocs.Class1.ExampleClass.Label
   langs:
   - csharp
@@ -85,61 +84,6 @@ items:
   - set
   modifiers.vb:
   - Public
-- uid: TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
-  commentId: M:TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
-  id: Add(System.Int32,System.Int32)
-  parent: TestDocs.Class1.ExampleClass
-  langs:
-  - csharp
-  - vb
-  name: Add(Int32, Int32)
-  nameWithType: Class1.ExampleClass.Add(Int32, Int32)
-  fullName: TestDocs.Class1.ExampleClass.Add(System.Int32, System.Int32)
-  type: Method
-  source:
-    remote:
-      path: Class1.cs
-      branch: master
-      repo: https://github.com/ZrekZ/TestDocs.git
-    id: Add
-    path: Class1.cs
-    startLine: 143
-  assemblies:
-  - TestDocs
-  namespace: TestDocs
-  summary: "\nAdds two integers and returns the result.\n"
-  example:
-  - "\n<pre><code>int c = Math.Add(4, 100500);\nif (c > 10)\n{\n    Console.WriteLine(c);\n}</code></pre>\n"
-  syntax:
-    content: public static int Add(int left, int right)
-    parameters:
-    - id: left
-      type: System.Int32
-      description: "\nThe left operand of the addition.\n"
-    - id: right
-      type: System.Int32
-      description: "\nThe right operand of the addition.\n"
-    return:
-      type: System.Int32
-      description: "\nThe sum of two integers.\n"
-    content.vb: Public Shared Function Add(left As Integer, right As Integer) As Integer
-  overload: TestDocs.Class1.ExampleClass.Add*
-  exceptions:
-  - type: System.OverflowException
-    commentId: T:System.OverflowException
-    description: "\nThrown when one parameter is\n<see cref=\"!:Int32.MaxValue\">MaxValue</see> and the other is\ngreater than 0.\nNote that here you can also use\n<a href=\"https://learn.microsoft.com/dotnet/api/system.int32.maxvalue\">https://learn.microsoft.com/dotnet/api/system.int32.maxvalue</a>\n to point a web page instead.\n"
-  seealso:
-  - linkId: TestDocs.Class1.ExampleClass.Label
-    commentId: P:TestDocs.Class1.ExampleClass.Label
-  see:
-  - linkId: TestDocs.Class1.ExampleClass
-    commentId: T:TestDocs.Class1.ExampleClass
-  modifiers.csharp:
-  - public
-  - static
-  modifiers.vb:
-  - Public
-  - Shared
 references:
 - uid: TestDocs
   commentId: N:TestDocs
@@ -453,23 +397,3 @@ references:
   name: String
   nameWithType: String
   fullName: System.String
-- uid: TestDocs.Class1.ExampleClass
-  commentId: T:TestDocs.Class1.ExampleClass
-  name: Class1.ExampleClass
-  nameWithType: Class1.ExampleClass
-  fullName: TestDocs.Class1.ExampleClass
-- uid: System.OverflowException
-  commentId: T:System.OverflowException
-  isExternal: true
-- uid: TestDocs.Class1.ExampleClass.Add*
-  commentId: Overload:TestDocs.Class1.ExampleClass.Add
-  name: Add
-  nameWithType: Class1.ExampleClass.Add
-  fullName: TestDocs.Class1.ExampleClass.Add
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  name: Int32
-  nameWithType: Int32
-  fullName: System.Int32

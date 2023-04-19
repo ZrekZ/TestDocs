@@ -19,19 +19,6 @@ references:
   commentId: T:TestDocs.Class1.ExampleClass
   fullName: TestDocs.Class1.ExampleClass
   nameWithType: Class1.ExampleClass
-- uid: TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
-  name: Add(Int32, Int32)
-  href: api/TestDocs.Class1.ExampleClass.html#TestDocs_Class1_ExampleClass_Add_System_Int32_System_Int32_
-  commentId: M:TestDocs.Class1.ExampleClass.Add(System.Int32,System.Int32)
-  fullName: TestDocs.Class1.ExampleClass.Add(System.Int32, System.Int32)
-  nameWithType: Class1.ExampleClass.Add(Int32, Int32)
-- uid: TestDocs.Class1.ExampleClass.Add*
-  name: Add
-  href: api/TestDocs.Class1.ExampleClass.html#TestDocs_Class1_ExampleClass_Add_
-  commentId: Overload:TestDocs.Class1.ExampleClass.Add
-  isSpec: "True"
-  fullName: TestDocs.Class1.ExampleClass.Add
-  nameWithType: Class1.ExampleClass.Add
 - uid: TestDocs.Class1.ExampleClass.Label
   name: Label
   href: api/TestDocs.Class1.ExampleClass.html#TestDocs_Class1_ExampleClass_Label
