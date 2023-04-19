@@ -3,6 +3,9 @@
     public class Class1
     {
         /// <summary>
+        /// TETST!!!
+        /// </summary>
+        /// <summary>
         /// Every class and member should have a one sentence
         /// summary describing its purpose.
         /// </summary>
