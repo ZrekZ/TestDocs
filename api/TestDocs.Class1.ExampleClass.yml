@@ -25,7 +25,7 @@ items:
   assemblies:
   - TestDocs
   namespace: TestDocs
-  summary: "\nits real?\n"
+  summary: "\nits real? ☻☺☻☺☻☺\n"
   remarks: "\nYou can expand on that one sentence summary to\nprovide more information for readers. In this case,\nthe <code>ExampleClass</code> provides different C#\nelements to show how you would add documentation\ncomments for most elements in a typical class.\n<p>\nThe remarks can add multiple paragraphs, so you can\nwrite detailed information for developers that use\nyour work. You should add everything needed for\nreaders to be successful. This class contains\nexamples for the following:\n</p>\n<table><tbody><tr><td>Summary</td><td>\nThis should provide a one sentence summary of the class or member.\n</td></tr><tr><td>Remarks</td><td>\nThis is typically a more detailed description of the class or member\n</td></tr><tr><td>para</td><td>\nThe para tag separates a section into multiple paragraphs\n</td></tr><tr><td>list</td><td>\nProvides a list of terms or elements\n</td></tr><tr><td>returns, param</td><td>\nUsed to describe parameters and return values\n</td></tr><tr><td>value</td><td>Used to describe properties</td></tr><tr><td>exception</td><td>\nUsed to describe exceptions that may be thrown\n</td></tr><tr><td>c, cref, see, seealso</td><td>\nThese provide code style and links to other\ndocumentation elements\n</td></tr><tr><td>example, code</td><td>\nThese are used for code examples\n</td></tr></tbody></table>\n<p>\nThe list above uses the &quot;table&quot; style. You could\nalso use the &quot;bullet&quot; or &quot;number&quot; style. Neither\nwould typically use the &quot;term&quot; element.\n<br />\nNote: paragraphs are double spaced. Use the *br*\ntag for single spaced lines.\n</p>\n"
   example: []
   syntax:
