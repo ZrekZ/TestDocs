@@ -3,7 +3,7 @@
     public class Class1
     {
         /// <summary>
-        /// its real? ☻☺☻☺☻☺
+        /// its real? ☻☺☻!!!☺☻☺
         /// </summary>
         /// <summary>
         /// TETST2!!!3333333
