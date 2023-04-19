@@ -19,16 +19,51 @@ items:
 references:
 - uid: TestDocs.Class1
   commentId: T:TestDocs.Class1
+  href: TestDocs.Class1.html
   name: Class1
   nameWithType: Class1
   fullName: TestDocs.Class1
 - uid: TestDocs.Class1.ExampleClass
   commentId: T:TestDocs.Class1.ExampleClass
+  href: TestDocs.Class1.html
   name: Class1.ExampleClass
   nameWithType: Class1.ExampleClass
   fullName: TestDocs.Class1.ExampleClass
+  spec.csharp:
+  - uid: TestDocs.Class1
+    name: Class1
+    href: TestDocs.Class1.html
+  - name: .
+  - uid: TestDocs.Class1.ExampleClass
+    name: ExampleClass
+    href: TestDocs.Class1.ExampleClass.html
+  spec.vb:
+  - uid: TestDocs.Class1
+    name: Class1
+    href: TestDocs.Class1.html
+  - name: .
+  - uid: TestDocs.Class1.ExampleClass
+    name: ExampleClass
+    href: TestDocs.Class1.ExampleClass.html
 - uid: TestDocs.Class1.Person
   commentId: T:TestDocs.Class1.Person
+  href: TestDocs.Class1.html
   name: Class1.Person
   nameWithType: Class1.Person
   fullName: TestDocs.Class1.Person
+  spec.csharp:
+  - uid: TestDocs.Class1
+    name: Class1
+    href: TestDocs.Class1.html
+  - name: .
+  - uid: TestDocs.Class1.Person
+    name: Person
+    href: TestDocs.Class1.Person.html
+  spec.vb:
+  - uid: TestDocs.Class1
+    name: Class1
+    href: TestDocs.Class1.html
+  - name: .
+  - uid: TestDocs.Class1.Person
+    name: Person
+    href: TestDocs.Class1.Person.html

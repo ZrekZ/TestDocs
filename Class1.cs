@@ -89,7 +89,7 @@
         public class ExampleClass
         {
             /// <value>
-            /// The <c>Label</c> property represents a label
+            /// The <c>ЧЧЧ Label</c> property represents a label
             /// for this instance.
             /// </value>
             /// <remarks>

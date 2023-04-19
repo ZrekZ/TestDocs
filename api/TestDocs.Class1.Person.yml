@@ -22,18 +22,27 @@ items:
       repo: https://github.com/ZrekZ/TestDocs.git
     id: Person
     path: Class1.cs
-    startLine: 163
+    startLine: 166
   assemblies:
   - TestDocs
   namespace: TestDocs
-  summary: "\nThis is an example of a positional record.\n"
-  remarks: "\nThere isn&apos;t a way to add XML comments for properties\ncreated for positional records, yet. The language\ndesign team is still considering what tags should\nbe supported, and where. Currently, you can use\nthe &quot;param&quot; tag to describe the parameters to the\nprimary constructor.\n"
+  summary: This is an example of a positional record.
+  remarks: >-
+    There isn't a way to add XML comments for properties
+
+    created for positional records, yet. The language
+
+    design team is still considering what tags should
+
+    be supported, and where. Currently, you can use
+
+    the "param" tag to describe the parameters to the
+
+    primary constructor.
   example: []
   syntax:
-    content: 'public class Person : IEquatable<Class1.Person>'
-    content.vb: >-
-      Public Class Person
-          Implements IEquatable(Of Class1.Person)
+    content: 'public record Class1.Person : IEquatable<Class1.Person>'
+    content.vb: Public Class Class1.Person Implements IEquatable(Of Class1.Person)
   inheritance:
   - System.Object
   implements:
@@ -46,12 +55,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  modifiers.csharp:
-  - public
-  - class
-  modifiers.vb:
-  - Public
-  - Class
 - uid: TestDocs.Class1.Person.#ctor(System.String,System.String)
   commentId: M:TestDocs.Class1.Person.#ctor(System.String,System.String)
   id: '#ctor(System.String,System.String)'
@@ -59,9 +62,9 @@ items:
   langs:
   - csharp
   - vb
-  name: Person(String, String)
-  nameWithType: Class1.Person.Person(String, String)
-  fullName: TestDocs.Class1.Person.Person(System.String, System.String)
+  name: Person(string, string)
+  nameWithType: Class1.Person.Person(string, string)
+  fullName: TestDocs.Class1.Person.Person(string, string)
   type: Constructor
   source:
     remote:
@@ -70,28 +73,38 @@ items:
       repo: https://github.com/ZrekZ/TestDocs.git
     id: .ctor
     path: Class1.cs
-    startLine: 163
+    startLine: 166
   assemblies:
   - TestDocs
   namespace: TestDocs
-  summary: "\nThis is an example of a positional record.\n"
-  remarks: "\nThere isn&apos;t a way to add XML comments for properties\ncreated for positional records, yet. The language\ndesign team is still considering what tags should\nbe supported, and where. Currently, you can use\nthe &quot;param&quot; tag to describe the parameters to the\nprimary constructor.\n"
+  summary: This is an example of a positional record.
+  remarks: >-
+    There isn't a way to add XML comments for properties
+
+    created for positional records, yet. The language
+
+    design team is still considering what tags should
+
+    be supported, and where. Currently, you can use
+
+    the "param" tag to describe the parameters to the
+
+    primary constructor.
   example: []
   syntax:
     content: public Person(string FirstName, string LastName)
     parameters:
     - id: FirstName
       type: System.String
-      description: "\nThis tag will apply to the primary constructor parameter.\n"
+      description: This tag will apply to the primary constructor parameter.
     - id: LastName
       type: System.String
-      description: "\nThis tag will apply to the primary constructor parameter.\n"
+      description: This tag will apply to the primary constructor parameter.
     content.vb: Public Sub New(FirstName As String, LastName As String)
   overload: TestDocs.Class1.Person.#ctor*
-  modifiers.csharp:
-  - public
-  modifiers.vb:
-  - Public
+  nameWithType.vb: Class1.Person.New(String, String)
+  fullName.vb: TestDocs.Class1.Person.New(String, String)
+  name.vb: New(String, String)
 - uid: TestDocs.Class1.Person.FirstName
   commentId: P:TestDocs.Class1.Person.FirstName
   id: FirstName
@@ -110,23 +123,19 @@ items:
       repo: https://github.com/ZrekZ/TestDocs.git
     id: FirstName
     path: Class1.cs
-    startLine: 163
+    startLine: 166
   assemblies:
   - TestDocs
   namespace: TestDocs
+  summary: This tag will apply to the primary constructor parameter.
+  example: []
   syntax:
-    content: public string FirstName { get; set; }
+    content: public string FirstName { get; init; }
     parameters: []
     return:
       type: System.String
     content.vb: Public Property FirstName As String
   overload: TestDocs.Class1.Person.FirstName*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 - uid: TestDocs.Class1.Person.LastName
   commentId: P:TestDocs.Class1.Person.LastName
   id: LastName
@@ -145,26 +154,23 @@ items:
       repo: https://github.com/ZrekZ/TestDocs.git
     id: LastName
     path: Class1.cs
-    startLine: 163
+    startLine: 166
   assemblies:
   - TestDocs
   namespace: TestDocs
+  summary: This tag will apply to the primary constructor parameter.
+  example: []
   syntax:
-    content: public string LastName { get; set; }
+    content: public string LastName { get; init; }
     parameters: []
     return:
       type: System.String
     content.vb: Public Property LastName As String
   overload: TestDocs.Class1.Person.LastName*
-  modifiers.csharp:
-  - public
-  - get
-  - set
-  modifiers.vb:
-  - Public
 references:
 - uid: TestDocs
   commentId: N:TestDocs
+  href: TestDocs.html
   name: TestDocs
   nameWithType: TestDocs
   fullName: TestDocs
@@ -172,13 +178,18 @@ references:
   commentId: T:System.Object
   parent: System
   isExternal: true
-  name: Object
-  nameWithType: Object
-  fullName: System.Object
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
 - uid: System.IEquatable{TestDocs.Class1.Person}
   commentId: T:System.IEquatable{TestDocs.Class1.Person}
   parent: System
   definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   name: IEquatable<Class1.Person>
   nameWithType: IEquatable<Class1.Person>
   fullName: System.IEquatable<TestDocs.Class1.Person>
@@ -188,323 +199,263 @@ references:
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
-    nameWithType: IEquatable
-    fullName: System.IEquatable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
-    nameWithType: <
-    fullName: <
+  - uid: TestDocs.Class1
+    name: Class1
+    href: TestDocs.Class1.html
+  - name: .
   - uid: TestDocs.Class1.Person
-    name: Class1.Person
-    nameWithType: Class1.Person
-    fullName: TestDocs.Class1.Person
+    name: Person
+    href: TestDocs.Class1.Person.html
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.IEquatable`1
     name: IEquatable
-    nameWithType: IEquatable
-    fullName: System.IEquatable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TestDocs.Class1
+    name: Class1
+    href: TestDocs.Class1.html
+  - name: .
   - uid: TestDocs.Class1.Person
-    name: Class1.Person
-    nameWithType: Class1.Person
-    fullName: TestDocs.Class1.Person
+    name: Person
+    href: TestDocs.Class1.Person.html
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
   isExternal: true
-  name: Equals(Object)
-  nameWithType: Object.Equals(Object)
-  fullName: System.Object.Equals(System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.Equals(System.Object,System.Object)
   commentId: M:System.Object.Equals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  name: Equals(Object, Object)
-  nameWithType: Object.Equals(Object, Object)
-  fullName: System.Object.Equals(System.Object, System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
   spec.csharp:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.Equals(System.Object,System.Object)
     name: Equals
-    nameWithType: Object.Equals
-    fullName: System.Object.Equals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.GetHashCode
   commentId: M:System.Object.GetHashCode
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   name: GetHashCode()
-  nameWithType: Object.GetHashCode()
-  fullName: System.Object.GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
   spec.csharp:
   - uid: System.Object.GetHashCode
     name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.GetHashCode
     name: GetHashCode
-    nameWithType: Object.GetHashCode
-    fullName: System.Object.GetHashCode
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.GetType
   commentId: M:System.Object.GetType
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   name: GetType()
-  nameWithType: Object.GetType()
-  fullName: System.Object.GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
   spec.csharp:
   - uid: System.Object.GetType
     name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.GetType
     name: GetType
-    nameWithType: Object.GetType
-    fullName: System.Object.GetType
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.MemberwiseClone
   commentId: M:System.Object.MemberwiseClone
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   name: MemberwiseClone()
-  nameWithType: Object.MemberwiseClone()
-  fullName: System.Object.MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
   spec.csharp:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.MemberwiseClone
     name: MemberwiseClone
-    nameWithType: Object.MemberwiseClone
-    fullName: System.Object.MemberwiseClone
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.ReferenceEquals(System.Object,System.Object)
   commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
   parent: System.Object
   isExternal: true
-  name: ReferenceEquals(Object, Object)
-  nameWithType: Object.ReferenceEquals(Object, Object)
-  fullName: System.Object.ReferenceEquals(System.Object, System.Object)
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
   spec.csharp:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
-    name: Object
-    nameWithType: Object
-    fullName: System.Object
+    name: object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.ReferenceEquals(System.Object,System.Object)
     name: ReferenceEquals
-    nameWithType: Object.ReferenceEquals
-    fullName: System.Object.ReferenceEquals
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
   - name: (
-    nameWithType: (
-    fullName: (
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
-  - name: ', '
-    nameWithType: ', '
-    fullName: ', '
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
   - uid: System.Object
     name: Object
-    nameWithType: Object
-    fullName: System.Object
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System.Object.ToString
   commentId: M:System.Object.ToString
   parent: System.Object
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   name: ToString()
-  nameWithType: Object.ToString()
-  fullName: System.Object.ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
   spec.csharp:
   - uid: System.Object.ToString
     name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
   spec.vb:
   - uid: System.Object.ToString
     name: ToString
-    nameWithType: Object.ToString
-    fullName: System.Object.ToString
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
-    nameWithType: (
-    fullName: (
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: System
   commentId: N:System
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
   name: System
   nameWithType: System
   fullName: System
 - uid: System.IEquatable`1
   commentId: T:System.IEquatable`1
   isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   name: IEquatable<T>
   nameWithType: IEquatable<T>
   fullName: System.IEquatable<T>
@@ -514,52 +465,50 @@ references:
   spec.csharp:
   - uid: System.IEquatable`1
     name: IEquatable
-    nameWithType: IEquatable
-    fullName: System.IEquatable
     isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
   - name: <
-    nameWithType: <
-    fullName: <
   - name: T
-    nameWithType: T
-    fullName: T
   - name: '>'
-    nameWithType: '>'
-    fullName: '>'
   spec.vb:
   - uid: System.IEquatable`1
     name: IEquatable
-    nameWithType: IEquatable
-    fullName: System.IEquatable
     isExternal: true
-  - name: '(Of '
-    nameWithType: '(Of '
-    fullName: '(Of '
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
   - name: T
-    nameWithType: T
-    fullName: T
   - name: )
-    nameWithType: )
-    fullName: )
 - uid: TestDocs.Class1.Person.#ctor*
   commentId: Overload:TestDocs.Class1.Person.#ctor
+  href: TestDocs.Class1.Person.html#TestDocs.Class1.Person.#ctor(System.String,System.String)
   name: Person
   nameWithType: Class1.Person.Person
   fullName: TestDocs.Class1.Person.Person
+  nameWithType.vb: Class1.Person.New
+  fullName.vb: TestDocs.Class1.Person.New
+  name.vb: New
 - uid: System.String
   commentId: T:System.String
   parent: System
   isExternal: true
-  name: String
-  nameWithType: String
-  fullName: System.String
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: TestDocs.Class1.Person.FirstName*
   commentId: Overload:TestDocs.Class1.Person.FirstName
+  href: TestDocs.Class1.Person.html#TestDocs.Class1.Person.FirstName
   name: FirstName
   nameWithType: Class1.Person.FirstName
   fullName: TestDocs.Class1.Person.FirstName
 - uid: TestDocs.Class1.Person.LastName*
   commentId: Overload:TestDocs.Class1.Person.LastName
+  href: TestDocs.Class1.Person.html#TestDocs.Class1.Person.LastName
   name: LastName
   nameWithType: Class1.Person.LastName
   fullName: TestDocs.Class1.Person.LastName
