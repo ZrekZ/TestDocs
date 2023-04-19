@@ -42,7 +42,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: https://{ZrekZ}:{214431297ZrekZ1}@github.com/{ZrekZ}/project.git
+      url: https://{ZrekZ}:{214431297ZrekZ1}@zrekz.github.io/TestDocs/
     runs-on: ubuntu-latest
     needs: build
     steps:
