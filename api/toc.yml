@@ -1,5 +1,4 @@
 ### YamlMime:TableOfContent
-items:
 - uid: TestDocs
   name: TestDocs
   items:
@@ -9,4 +8,3 @@ items:
     name: Class1.ExampleClass
   - uid: TestDocs.Class1.Person
     name: Class1.Person
-memberLayout: SamePage

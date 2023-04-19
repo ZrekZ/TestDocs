@@ -8,9 +8,11 @@
       "source_relative_path": "api/TestDocs.Class1.ExampleClass.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TestDocs.Class1.ExampleClass.html"
+          "relative_path": "api/TestDocs.Class1.ExampleClass.html",
+          "hash": "NjgNq48CNPz9An6625Bnutm/j7avkhnp/nh2aIGK3dc="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -18,9 +20,11 @@
       "source_relative_path": "api/TestDocs.Class1.Person.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TestDocs.Class1.Person.html"
+          "relative_path": "api/TestDocs.Class1.Person.html",
+          "hash": "1q3eDbOF41bOqO+CLDeq5tHcR5aXPV9FDUberCYfaj0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -28,9 +32,11 @@
       "source_relative_path": "api/TestDocs.Class1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TestDocs.Class1.html"
+          "relative_path": "api/TestDocs.Class1.html",
+          "hash": "ljbo9tpRHtLnvIEV6oZykiWyhAwc9pUL/QlSy1Gva44="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -38,9 +44,11 @@
       "source_relative_path": "api/TestDocs.yml",
       "output": {
         ".html": {
-          "relative_path": "api/TestDocs.html"
+          "relative_path": "api/TestDocs.html",
+          "hash": "pLgyhqYJMm48X61Zpr1/uLLk040WwfJocSgDtXtuXr0="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -48,9 +56,11 @@
       "source_relative_path": "api/index.md",
       "output": {
         ".html": {
-          "relative_path": "api/index.html"
+          "relative_path": "api/index.html",
+          "hash": "xmLyLgfTG++y1sHmUJpQ5FpUgH/YUIyK4rnRXPgnLLo="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -58,9 +68,11 @@
       "source_relative_path": "api/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "api/toc.html"
+          "relative_path": "api/toc.html",
+          "hash": "Qrqxgxr0fJz+iV7hyFXYDucwmHbEtgqKHq/ysbJhWxk="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -68,9 +80,11 @@
       "source_relative_path": "articles/intro.md",
       "output": {
         ".html": {
-          "relative_path": "articles/intro.html"
+          "relative_path": "articles/intro.html",
+          "hash": "zBRFqPsZbVpCkPQNf1+Dfo139i51Ukb2lycchpUuiIU="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -78,9 +92,11 @@
       "source_relative_path": "articles/toc.yml",
       "output": {
         ".html": {
-          "relative_path": "articles/toc.html"
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -88,9 +104,11 @@
       "source_relative_path": "index.md",
       "output": {
         ".html": {
-          "relative_path": "index.html"
+          "relative_path": "index.html",
+          "hash": "cN20YY4Cl0pq4P9i3jmxIy8F10mm1DiKHDUfF/PhdCM="
         }
       },
+      "is_incremental": false,
       "version": ""
     },
     {
@@ -98,10 +116,55 @@
       "source_relative_path": "toc.yml",
       "output": {
         ".html": {
-          "relative_path": "toc.html"
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
         }
       },
+      "is_incremental": false,
       "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Disable incremental build by force rebuild option.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "ForceRebuild"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 4,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: it's disabled.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
     }
   ],
   "version_info": {},
