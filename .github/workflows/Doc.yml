@@ -16,7 +16,7 @@ jobs:
     - name: Build Documentation
       uses: nikeee/docfx-action@v1.0.0
       with:
-        args: ./Docs/docfx_project/docfx.json
+        args: ./docfx.json
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
