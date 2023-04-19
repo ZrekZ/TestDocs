@@ -6,6 +6,9 @@
         /// TETST!!!
         /// </summary>
         /// <summary>
+        /// TETST2!!!
+        /// </summary>
+        /// <summary>
         /// Every class and member should have a one sentence
         /// summary describing its purpose.
         /// </summary>
