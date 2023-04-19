@@ -3,7 +3,10 @@
     public class Class1
     {
         /// <summary>
-        /// TETST!!!
+        /// TETST!!!213
+        /// </summary>
+        /// <summary>
+        /// TETST2!!!3333333
         /// </summary>
         /// <summary>
         /// Every class and member should have a one sentence
@@ -120,7 +123,7 @@
             /// </param>
             /// <example>
             /// <code>
-            /// int c = Math.Add(4, 5);
+            /// int c = Math.Add(4, 10);
             /// if (c > 10)
             /// {
             ///     Console.WriteLine(c);
