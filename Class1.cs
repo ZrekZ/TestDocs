@@ -3,7 +3,7 @@
     public class Class1
     {
         /// <summary>
-        /// TETST!!!213
+        /// its real?
         /// </summary>
         /// <summary>
         /// TETST2!!!3333333
@@ -123,7 +123,7 @@
             /// </param>
             /// <example>
             /// <code>
-            /// int c = Math.Add(4, 105);
+            /// int c = Math.Add(4, 100500);
             /// if (c > 10)
             /// {
             ///     Console.WriteLine(c);
